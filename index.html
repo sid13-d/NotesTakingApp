@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Member List</h2>
+        </header>
+        <div class="table-wrapper">
+            <table class="user-table">
+                <tr>
+                    <th>id</th>
+                    <th>category</th>
+                    <th>title</th>
+                    <th>buttons</th>
+                </tr>
+
+            </table>
+            <button class="btn btn-addUser">Add user</button>
+        </div>
+
+
+        <div class="add-modal modal-wrapper">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3>Add new user</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form" autocomplete="off">
+                        <input type="number" class="id" name="id" placeholder="id">
+                        <input type="text" class="cat" name="category" placeholder="category">
+                        <input type="text" class="title" name="title" placeholder="title">
+                        <button class="btn btn-modal">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        // import { firebase, initializeApp } from "firebase/app";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAyaY6hi3Fdja-NH7xaewGEcFSLFRxCiGY",
+            authDomain: "punetimes-88db3.firebaseapp.com",
+            projectId: "punetimes-88db3",
+            storageBucket: "punetimes-88db3.appspot.com",
+            messagingSenderId: "1007572416520",
+            appId: "1:1007572416520:web:af88fa4976d2f3cdb4b9bd"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+:root{
+    
+    --primary-color: rgb(102, 53, 102);
+    --secondary-color: rgb(143, 78, 34);
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ body{
+    font-family: 'Indie Flower', cursive;
+
+ }
+
+.container {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    -webkit-box-shadow: 7px 5px 54px -5px rgba(0,0,0,0.85);
+    -moz-box-shadow: 7px 5px 54px -5px rgba(0,0,0,0.85);
+    box-shadow: 7px 5px 54px -5px rgba(0,0,0,0.85);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+header{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header h2 {
+    color: aliceblue;
+    margin-left: 1rem;
+}
+
+.user-table{
+    width: 90%;
+    margin: 2rem;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td{
+    
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 2px;
+}
+
+.user-table th{
+    background-color: #fafafa;
+    padding: 1rem auto;
+}
+.btn{
+    background-color: transparent;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-edit {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.btn-delete {
+    color: var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+}
+
+.btn-edit:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.5s ease;
+}
+
+.btn-delete:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transition: 0.5s ease;
+}
+
+.table-wrapper{
+    text-align: center;
+}
+
+/* modal */
+.modal-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.131);
+    display: none;
+}
+.modal{
+    position: relative;
+    background: white;
+    text-align: center;
+    width: 25rem;
+    margin: 5rem auto;
+    -webkit-box-shadow: 7px 5px 54px -5px rgba(0,0,0,0.85);
+    -moz-box-shadow: 7px 5px 54px -5px rgba(0,0,0,0.85);
+    box-shadow: 7px 5px 54px -5px rgba(0,0,0,0.85);
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px; opacity: 0;
+    }
+    to {
+        top: 0; opacity: 1;
+    }
+}
+
+.modal-show{
+    display: block;
+}
+.modal-header{
+    margin-bottom: 2rem;
+    background: #f8fafb;
+    padding: 1rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+input{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-modal {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.btn-modal:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.5s ease;
+}
